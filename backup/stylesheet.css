@@ -1,0 +1,361 @@
+@charset "UTF-8";
+
+  /** 
+   * Forcing vertical scrollbars in IE8, Firefox, Webkit & Opera 
+   *
+   * @workaround
+   * @affected IE8, FF, Webkit, Opera
+   * @css-for all
+   * @valid CSS3
+   */
+
+  body { 
+  overflow-y: scroll;
+  }
+  /*-------------------------------------------------------------------------*/
+
+  /* Marginal areas & page background */
+  body { 
+  font-family: Verdana, Geneva, sans-serif;
+  background: #06183e none; 
+  margin: 10px; 
+  padding: 0; 
+  }
+
+  /* Layout Alignment */
+  .page_margins { margin: 0 auto; }
+
+  /* Layout Properties */
+  .page_margins { width: 900px; background: #fff; }
+  
+  .page { padding: 10px 15px 10px 10px; }
+  
+  #header { 
+  height: 130px;
+  background: #FFFFFF; 
+  background-image:url('images/banner.jpg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin: -10px -10px 0 -10px;
+  }
+  
+  #main { 
+  margin: 0; 
+  padding: 0;
+  background: #fff;
+  padding-bottom: 15px;
+  }
+  
+  #footer { 
+  clear: both;
+  background: #f9f9f9; 
+  border-top: 5px #efefef solid; 
+  color:#666; 
+  font-size: 9px;
+  overflow: hidden;
+  padding: 10px 20px;
+  }
+  
+  /* Navigation */
+  #nav { 
+	margin: 0 0 0 -10px; /* -10 to compensate for the extra margin on the left */
+	padding: 0 20px 0 0; /* 20 to compensate for the -10 that moved the nav left, and the additional space on the right side */
+	overflow: hidden;
+	float: left;
+	width: 100%;
+	border: 1px solid #000;
+	border-width: 1px 0;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	font-variant: small-caps;
+  }
+  
+  #nav li { margin: 0; padding: 0; display:inline; }
+  #nav ul { margin-left: 5px; }
+  
+	#nav a:link, #nav a:visited {
+		color: #fff;
+		background: #2c4071;
+		padding: 5px 10px 5px 10px;
+		float: left;
+		width: 14%;
+		border-right: 1px solid #000;
+	}
+	
+	#nav a:hover {
+		color: #2c4071;
+		background: #fff;
+	}
+  
+  /* Teaser */
+  #teaser-wrap {
+	  clear:both;
+	  height: 75px;
+	  padding-top: 10px;
+  }
+  
+  .teaser { 
+  float:left; 
+  width: 196px; 
+  height: 75px;
+  padding-left: 5px;
+  border: 1px dashed #555;
+  }
+  
+  .teaser h6, .teaser p {
+	  margin: 10px 0px -5px 70px;
+  }
+  
+  .teaser h6 {
+	  font-family: Arial, Helvetica, sans-serif;
+	  font-variant: small-caps;
+  }
+  
+  .teaser p {
+	  font-family: Arial, Helvetica, sans-serif;
+	  font-size: 10px;
+	  line-height: 10px;
+  }
+  
+  #teaser1 { 
+  background-image: url('images/teaser-gray.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+  }
+  
+  #teaser2 { 
+  background-image: url('images/teaser-gray.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+  }
+  
+  #teaser3 { 
+  background-image: url('images/teaser-gray.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+  }
+  
+  #teaser4 { 
+  background-image: url('images/quote-bg3.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+  margin-right: 0; 
+  }
+  
+  #teaser1:hover, #teaser2:hover, #teaser3:hover {
+	  background-image: url('images/teaser-color.png');
+	  background-repeat: no-repeat;
+	  background-position: top left;
+  }
+  
+  /*-------------------------------------------------------------------------*/
+
+  #col1 { 
+  float: left; 
+  width: 74%;
+  }
+  
+  #col2 { 
+  display:none
+  }
+  
+  #col3 { 
+  width: auto; 
+  margin: 0 0 0 75%;
+  }
+  
+  #col1_content { 
+  border-right: 1px solid #CCC; 
+  margin-top: 5px; 
+  padding-right: 10px;
+  min-height: 450px
+  }
+  
+  #col1_content li {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  
+  #col1_content p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-left: 5px;
+  }
+  
+  #col1_content img {
+  border: 2px 2px 2px 2px;
+  border-color: #ccc;
+  }
+  
+  #col1_content a {
+	  border: 0;
+  }
+  
+  #col3_content { 
+  padding: 5px 0 0 0;
+  font-style: italic;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 400px;
+  }
+
+/*-------------------------------------------------------------------------*/
+
+  /* Look and Layout! :) */
+  
+  h1 {
+	  font-family: Arial, Helvetica, sans-serif;
+	  letter-spacing: 2px;
+	  font-variant: small-caps;
+	  color: #000;
+	  padding: 65px 0 0 5px;
+  }
+  
+  h2 {
+	letter-spacing: -2px;
+	font-family: georgia;
+	font-size: 23px;
+	text-transform: lowercase;
+	color: #222;
+	padding-top: 5px;
+	padding-left: 2px;
+	margin-bottom: -10px;
+	}
+	
+  h3 {
+	font-family: georgia;
+	font-size: 18px;
+	color: #444;
+	text-transform: lowercase;
+	letter-spacing: -1px;
+	padding-left: 5px;
+	margin-top: 0px;
+	margin-bottom: -10px;
+	}
+	
+#cabinet {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 13px;
+	color: #003;
+	}
+
+#cabinet p {
+	margin: 10px 30px 10px 30px;
+	}
+
+.quote {
+	font-style: italic;
+	margin-left: 40px;
+	}
+
+.events {
+	font-size: 13px;
+	margin-left: 20px;
+	}
+
+.tzuching-about {
+	font-size: 13px;
+	padding-left: 20px;
+	}
+	
+.cabinet {
+	margin: 10px;
+}
+
+.cabinet td {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	text-align: center;
+}
+
+.officerteam {
+	font-size: 20px;
+}
+
+.r-align {
+	text-align: right;
+}
+
+.vegetarianism, .announcements {
+	font-size: 13px;
+	margin-left: 10px;
+	margin-bottom: 8px;
+	}
+  /*-------------------------------------------------------------------------*/
+
+  .page_margins {
+    border: 0 none;
+    background-repeat:repeat-y;
+    background-position:left;
+  }
+
+  .page {
+    border: 0 none;
+    margin: 0 0 0 5px; padding: 10px 15px 10px 10px;
+    background-repeat:repeat-y;
+    background-position:right;
+	overflow:auto;
+  }
+
+/* The last column in a row needs this class. */
+
+  .last { margin-right: 0; }
+
+/* Border with whitespace. */
+
+  .colborder {
+	padding-right: 9px;
+	margin-right: 10px;
+  }
+
+  #border-top {
+    overflow:hidden;
+    width: auto;
+    height: 20px;
+    font-size:0;
+    margin-bottom: -35px;
+    background-repeat:repeat-x;
+    background-position:top left;
+  }
+
+  #border-bottom {
+    overflow:hidden;
+    width: auto;
+    height: 20px;
+    margin-top: -15px;
+    font-size:0;
+    background-repeat:repeat-x;
+    background-position:bottom left;
+  }
+
+  #edge-tl {
+    float:left;
+    width: 20px;
+    height: 20px;
+    background-image: url('images/topcorner-left.png');
+    background-position: top left;
+  }
+
+  #edge-tr {
+    position:relative; /* IE Fix | z-index */
+    float:right;
+    width: 20px;
+    height: 20px;
+    background-image: url('images/topcorner-right.png');
+    background-position: top right;
+  }
+
+  #edge-bl {
+    float:left;
+    width: 20px;
+    height: 20px;
+    background-image: url('images/botcorner-left.png');
+    background-position: bottom left;
+  }
+
+  #edge-br {
+    position:relative; /* IE Fix | z-index */
+    float:right;
+    width: 20px;
+    height: 20px;
+    background-image: url('images/botcorner-right.png');
+    background-position: bottom right;
+  }  
+  
